@@ -10,4 +10,4 @@ int main(){
     int n=6;
     printf("the value of fibonaccia at %d is %d",n,fibonacci(n));
     return 0;
-}
+    }
