@@ -1,0 +1,13 @@
+#include <stdio.h>
+void thirty(int*);
+void thirty(int *a){
+    *a=*a*30;
+}
+int main (){
+    int a=10;
+    printf("the value of a is %d\n",a);
+    thirty(&a);
+    printf("the value of a is %d",a);
+    return 0;
+    
+}
