@@ -1,13 +1,24 @@
 #include <stdio.h>
-int fibonacci(int n);
-int fibonacci(int n){
-    if(n==1||n==2){
-        return (n-1);
+int main (){
+    int flag=0;
+    int n;
+    scanf("%d",&n);
+    if (n==1||n==0){
+        flag=1;
+        
     }
-    return fibonacci(n-1) + fibonacci (n-2);
-}
-int main(){
-    int n=6;
-    printf("the value of fibonaccia at %d is %d",n,fibonacci(n));
+    else{
+        for(int i=2;i<n;i++){
+            if(n%i==0){
+                flag=1;
+            }
+        }
+    }
+    if(flag){
+        printf("the number is not prime");
+    }
+    else{
+        printf("the number is prime");
+    }
     return 0;
-    }
+}
